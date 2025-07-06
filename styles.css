@@ -1,0 +1,58 @@
+/* Background for all sections */
+.section-with-bg,
+.hero-bg {
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+              url('bg1.jpeg') center center / cover no-repeat;
+  background-attachment: fixed; /* Optional: Parallax effect */
+  color: #212529;
+}
+
+/* Hero section height */
+.hero-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Overlay handled by linear-gradient — no need for ::before now */
+
+/* Text box inside the hero */
+.hero-text-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #ddd;
+}
+
+/* White content box for About, Projects, Contact */
+.section-box {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+}
+
+/* Typography and smoothing */
+body {
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1, h2 {
+  letter-spacing: -0.5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-bg .container {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-bg h1 {
+    font-size: 2rem;
+  }
+}
+
