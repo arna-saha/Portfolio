@@ -1,4 +1,4 @@
-# @arnacodes Portfolio
+# arnacodes Portfolio
 
 Welcome to my personal developer portfolio — built with **HTML**, **CSS**, and **Bootstrap**.
 
